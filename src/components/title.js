@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Title() {
   return (
-    <div class="container">
-      <div class="jumbotron">
+    <div className="container">
+      <div className="jumbotron">
         <h1>Employee directory</h1>
       </div>
     </div>

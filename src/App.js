@@ -1,10 +1,14 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import API from "../utils/API.js"
+import Title from "./components/title";
+import Main from "./components/main.js";
 
 
 function App() {
-  return <OmdbContainer />;
+  return( <div>
+        <Title />
+        <Main />
+</div>);
 }
 
 export default App;
