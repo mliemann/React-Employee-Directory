@@ -19,7 +19,6 @@ function Table(props) {
         {props.users.map((user) => {
           return(
           <tr key={user.login.uuid}>
-            
             <td data-label="First">{user.name.first}</td>
             <td data-label="Last">{user.name.last}</td>
             <td data-label="Email">{user.email}</td>

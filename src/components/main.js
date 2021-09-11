@@ -16,15 +16,6 @@ users
     );
   }
 
-  // userSetup = query => {
-  //   API.search(query)
-  //     .then(res => this.setState({ users: res.data }))
-  //     .catch(err => console.log(err));
-  //     console()
-  // };
-
-
-
   render() {
     return (
       <div>
