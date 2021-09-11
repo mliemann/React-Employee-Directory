@@ -1,8 +1,14 @@
 import React from "react";
-import "./style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function Title(props) {
-  return <h1 className="title">{props.children}</h1>;
+function Title() {
+  return (
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Employee directory</h1>
+      </div>
+    </div>
+  );
 }
 
 export default Title;
