@@ -11,7 +11,7 @@ function Table(props) {
       <th scope="col">Last</th>
       <th scope="col">Birthday</th>
       <th scope="col">Email</th>
-      <th scope="col">Cell</th>
+      <th scope="col">Phone</th>
       <th scope="col">Gender</th>
     </tr>
   </thead>
