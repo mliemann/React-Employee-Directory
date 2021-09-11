@@ -1,6 +1,5 @@
-import React from "react";
-
-
+import React, {Component} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import API from "../utils/API.js"
 
 
@@ -12,7 +11,7 @@ class App extends Component {
 
   removeFriend = id => {
     // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
+    const friends = this.state.API.filter(friends => id !== id);
     // Set this.state.friends equal to the new friends array
     this.setState({ friends });
   };
@@ -20,9 +19,7 @@ class App extends Component {
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
-      <Wrapper>
-        <Title>Friends List</Title>
-        {this.state.friends.map(friend => (
+        {this.state.API.map(friend => (
           <FriendCard
             removeFriend={this.removeFriend}
             id={friend.id}

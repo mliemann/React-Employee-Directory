@@ -13,7 +13,8 @@ const API = {
                 email: user.email,
                 birthday: user.dob.date,
                 cell: user.cell,
-                id: user.id.value
+                id: user.id.value,
+                sex: user.gender
               };
             });
           });
