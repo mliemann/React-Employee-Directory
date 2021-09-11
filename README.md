@@ -21,15 +21,12 @@ As a user, I want to be able to view my entire employee directory at once so tha
 
 ## Review Links
 [Repository](https://github.com/mliemann/React-Employee-Directory) &nbsp; | &nbsp; 
-[Live]()
+[Live](https://mliemann.github.io/React-Employee-Directory/)
 
 
 ## Questions
 To check out my work and follow me on GitHub visit: [mliemann](https://github.com/mliemann) <br/>
 If you have any questions about this or any other project feel free to email me at: [mliemann@live.com](mailto:mliemann@live.com)
-
-## Screenshots
-![Employee Directory screenshot](./public/employee-ss.png)
 
 
 ## License
