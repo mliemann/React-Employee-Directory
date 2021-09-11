@@ -17,7 +17,7 @@ As a user, I want to be able to view my entire employee directory at once so tha
 * Bootstrap  
 * GitHub Pages
 * Node.js
-* Axios
+* Axios 
 
 ## Review Links
 [Repository](https://github.com/mliemann/React-Employee-Directory) &nbsp; | &nbsp; 
