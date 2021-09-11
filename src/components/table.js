@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Table(props) {
   return (
-    <table className="table">
+    <table className="table sortable">
       <thead>
         <tr>
           {/* <th scope="col">ID</th> */}
