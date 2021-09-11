@@ -25,8 +25,8 @@ As a user, I want to be able to view my entire employee directory at once so tha
 
 
 ## Questions
-To check out my work and follow me on GitHub visit: [Twdavis85](https://github.com/mliemann) <br/>
-If you have any questions about this or any other project feel free to email me at: [tdnc85@yahoo.com](mailto:mliemann@live.com)
+To check out my work and follow me on GitHub visit: [mliemann](https://github.com/mliemann) <br/>
+If you have any questions about this or any other project feel free to email me at: [mliemann@live.com](mailto:mliemann@live.com)
 
 ## Screenshots
 ![Employee Directory screenshot](./public/employee-ss.png)
