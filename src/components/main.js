@@ -18,13 +18,8 @@ class Main extends Component {
    this.setState({
     filter: value, 
 })
-   if(value ==="Male"){
-     console.log("TestMale")
-     console.log(this.state.filter)
-   } else {if(value ==="Female"){
-    console.log("TestFemale")
-  }} 
-  }
+this.filterData(event.target.value)
+  } 
 
   Sort = event => {
     console.log(event.target.value)
@@ -32,12 +27,35 @@ class Main extends Component {
    this.setState({
     sort: value, 
 })
-   if(value ==="Ascending"){
-     console.log("Ascending")
-   } else {if(value ==="Decending"){
-    console.log("Decending")
-  }}
+  this.sortData(event.target.value);
+//   if (this.state.filter===''){
+//     return;
+// } else {
+//     this.filterData(this.state.filter, this.state.results);
+// }
   }
+
+  sortData= event => {
+    console.log("function start SoRT")
+    this.state.users.sort(function(a,b) {
+        if(event==='Last') {
+            if (a.name.last > b.name.last) {
+                return 1;
+            } else if (a.name.last < b.name.last) {
+                return -1;
+            } return 0;
+        } else {if (event==='Age') {
+          if (a.dob.age > b.dob.age) {
+              return 1;
+          } else if (a.dob.age < b.dob.age) {
+              return -1;
+          }  return 0;
+      } } 
+    })
+    console.log(this.state.users);
+};
+
+
 
   componentDidMount() {
     API.fetchUsers().then((res) =>
