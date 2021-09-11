@@ -1,11 +1,23 @@
 import axios from 'axios';
 
-const URL = "https://randomuser.me/api/?seed=emp";
-
 const API = {
-    search: function(userdata) {
-        return axios.get(URL + userdata);
-    }
+    fetchUsers: function() {
+        return axios
+          .get("https://randomuser.me/api/?seed=emp")
+          .then(res => {
+            const users = res.data;
+            return users.map(user => {
+              return {
+                firstname: user.name.first,
+                lastname: user.name.last,
+                email: user.email,
+                birthday: user.dob.date,
+                cell: user.cell,
+                id: user.id.value
+              };
+            });
+          });
+      }
 };
 
 export default API;
